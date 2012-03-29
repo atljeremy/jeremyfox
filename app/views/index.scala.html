@@ -1,0 +1,93 @@
+@(message: String)
+
+@main("Welcome to Play 2.0") {
+
+<div id="header"> <h2>Welcome To <a href="http://www.jeremyfox.me"><span class="blue"><underline>Atljeremy</underline></span></a> On Github!</h2> </div>
+
+<div id="mainContent">
+
+    <h1>@message</h1>
+
+    <div class="overflowHidden">
+        <div class="grid">
+            <div class="row">
+                <div class="cell">
+                    <div class="note">
+
+                        <h2>Bill Planner</h2>
+
+                        <img src="@routes.Assets.at("images/billplanner.jpg")" height="210" />
+
+                        <ul class="bottom">
+                            <li><div class="ribbon-left"><a href="https://github.com/atljeremy/Bill-Planner">REPO</a> -
+                                <a href="http://atljeremy.github.com/Bill-Planner/">GHPAGES</a></div></li>
+                        </ul>
+
+                    </div> <!-- /note -->
+                </div> <!-- /cell -->
+                <div class="cell">
+                    <div class="note">
+
+                        <h2>Stylus.mode</h2>
+
+                        <img src="@routes.Assets.at("images/stylus.mode.jpg")" width="210" height="210" />
+
+                        <ul class="bottom">
+                            <li><div class="ribbon-right"><a href="https://github.com/atljeremy/Stylus.mode">REPO</a></div></li>
+                        </ul>
+
+                    </div> <!-- /note -->
+                </div> <!-- /cell -->
+            </div> <!-- /row -->
+        </div> <!-- /grid -->
+    </div> <!-- /overflowHidden -->
+
+</div> <!-- /mainContent -->
+
+<div class="wrapper">
+    <div id="footerBlock">
+        <div id="footerContent">
+            <div class="overflowHidden">
+                <div class="grid">
+                    <div class="row">
+                        <div class="cell">
+                            <img src="@routes.Assets.at("images/me.jpg")" />
+                        </div>
+                        <div class="cell">
+                            I'm Jeremy Fox. <br /><br />
+                            I make websites and mobile apps. <br /><br />
+                            I kick ass.
+
+                            <p>
+                                Connect with me:
+                            </p>
+
+                            <p>
+                                <a href="https://www.facebook.com/atljeremy"><img class="floatLeft" src="@routes.Assets.at("images/facebook.png")" /></a>
+                                <a href="http://www.linkedin.com/in/atljeremy"><img class="floatLeft" src="@routes.Assets.at("images/linkedin.png")" /></a>
+                                <img class="floatLeft" src="@routes.Assets.at("images/mail.png")" />
+                            </p>
+                        </div>
+                        <div class="cell">
+                            Ya
+                        </div>
+                        <div class="cell">
+                            Foo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div id="footerFade"> </div>-->
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    fox.fadeIn(".note");
+    });
+
+</script>
+
+}
